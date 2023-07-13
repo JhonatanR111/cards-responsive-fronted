@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;500;700;800&display=swap');
+:root{
+    --Font: 'Hanken Grotesk', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.main{
+    background-image: linear-gradient(to bottom,hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 25px;
+    display: block;
+    height: 50vh;
+    text-align: center;
+    width: 20%;
+}
+.main h3{
+    color: hsla(0, 0%, 100%, 60%);
+    font-family: var(--Font);
+    font-size: 22px;
+    font-weight: 700;
+}
+.main #result_circle{
+    align-items: center;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    transform: translateX(50%);
+    width: 200px;
+}
+.main #result_circle p{
+    color: hsla(0, 0%, 100%, 40%);
+    font-family: var(--Font);
+}
+.main #result_circle p strong{
+    color: hsl(0, 0%, 100%);
+    font-size: 5rem;
+}
+#great{
+    color: hsl(0, 0%, 100%);
+    font-family: var(--Font);
+    font-weight: 800;
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+}
+.main #parrafo{
+    color: hsla(0, 0%, 100%, 70%);
+    font-family: var(--Font);
+    font-size: 18px;
+}
+
+
+/* main 2 */
+.main2{
+    display: block;
+    text-align: center;
+    width: 20%;
+    height: 50vh;
+}
+.main2 h3{
+    color: hsl(224, 30%, 27%);
+    font-family: var(--Font);
+    font-size: 22px;
+    text-align: left;
+    margin-left: 25px;
+    margin-bottom: 12%;
+}
+.main2 #reaction{ 
+    color: hsl(0, 100%, 67%);
+    display: flex;
+    font-family: var(--Font);
+    margin-bottom: 10%;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.main2 #memory{ 
+    color: hsl(39, 100%, 56%);
+    display: flex;
+    font-family: var(--Font);
+    margin-bottom: 10%;
+    margin-left: 40px;
+    text-align: left;
+}
+.main2 #verbal{ 
+    color: hsl(166, 100%, 37%);
+    display: flex;
+    font-family: var(--Font);
+    margin-bottom: 10%;
+    margin-left: 40px;
+    text-align: left;
+}
+.main2 #visual{ 
+    color: hsl(234, 85%, 45%);
+    display: flex;
+    font-family: var(--Font);
+    margin-bottom: 10%;
+    margin-left: 40px;
+    text-align: left;
+}
+.main2 img{ margin-right: 15px;}
+.main2 .res{
+    color: hsl(224, 30%, 27%);
+    margin-left: 7vw;
+}
+#verbal .res, #visual .res{
+    margin-left: 7.5vw;
+}
+
+.main2 button{
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    border-radius: 50px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    font-family: var(--Font);
+    font-size: 20px;
+    height: 5vh;
+    margin-bottom: 30px;
+    width: 80%;
+}
+.main2 button:hover{
+    background-image: linear-gradient(to bottom,hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+
+/* responsive */
+@media screen and (max-width: 375px) {
+    body{
+        display: block;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main{ 
+        width: 100%;
+        height: 60vh;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .main h3{
+        font-size: 17px;
+        margin-top: 0px;
+
+    }
+    .main #result_circle{
+        height: 120px;
+        width: 120px;
+        transform: translateX(70%);
+    }
+    .main #result_circle p{
+        font-size: 1rem;
+    }
+    .main #result_circle p strong{
+        font-size: 2.5rem;
+    }
+    #great{
+        font-size: 1.3rem;
+
+    }
+    .main #parrafo{
+        font-size: 14px;
+    }
+
+    /* main 2 */
+    .main2 { 
+        display: block;
+        width: 100%;
+    }
+    .main2 h3{
+        font-size: 20px;
+
+    }
+    .main2 .res{
+        color: hsl(224, 30%, 27%);
+        margin-left: 20vw;
+    }
+    #verbal .res, #visual .res{
+        margin-left: 23vw;
+    }
+    .main2 button{
+        font-size: 18px;
+        height: 8vh;
+    }
+    
+}
